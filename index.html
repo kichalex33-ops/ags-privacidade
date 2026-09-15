@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Política de Privacidade — Extensor e-SUS PEC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f6f7f4;
+    --ink: #1c2624;
+    --ink-soft: #4a5551;
+    --line: #dde3de;
+    --accent: #0e6b5c;
+    --accent-soft: #e4f0ec;
+    --accent-ink: #0a4d42;
+    --tag: #395b73;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121715;
+      --ink: #e9ede9;
+      --ink-soft: #a9b4ae;
+      --line: #2b332f;
+      --accent: #4ecdb2;
+      --accent-soft: #17332c;
+      --accent-ink: #8fe3cd;
+      --tag: #7fb0d1;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-block: clamp(28px, 6vw, 64px);
+  }
+  .page { max-width: 700px; margin: 0 auto; padding-inline: 20px; }
+  header.doc-head {
+    display: flex; flex-direction: column; gap: 10px;
+    padding-bottom: 28px; margin-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--tag);
+  }
+  h1 {
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-weight: 700; font-size: clamp(28px, 4.5vw, 38px);
+    line-height: 1.15; margin: 0; color: var(--ink);
+  }
+  .subtitle { color: var(--ink-soft); font-size: 15px; max-width: 56ch; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 8px 18px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12.5px; color: var(--ink-soft);
+  }
+  .meta-row span b { color: var(--ink); font-weight: 500; }
+  .callout {
+    display: flex; gap: 14px; background: var(--accent-soft);
+    border: 1px solid rgba(14,107,92,0.3);
+    border-radius: 10px; padding: 18px 20px; margin: 28px 0 36px;
+  }
+  .callout .mark {
+    font-family: "Source Serif 4", serif; font-weight: 700; font-size: 20px;
+    color: var(--accent-ink); line-height: 1; padding-top: 2px; flex: none;
+  }
+  .callout p { margin: 0; color: var(--ink); font-size: 15px; }
+  .callout strong { color: var(--accent-ink); }
+  section.clause {
+    display: grid; grid-template-columns: 44px 1fr; gap: 4px 18px;
+    padding-block: 26px; border-bottom: 1px solid var(--line);
+  }
+  section.clause:last-of-type { border-bottom: none; }
+  .clause-num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px; color: var(--accent); padding-top: 4px;
+  }
+  .clause-body h2 {
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-weight: 600; font-size: 19px; margin: 0 0 10px; color: var(--ink);
+  }
+  .clause-body p { margin: 0 0 12px; max-width: 62ch; color: var(--ink); }
+  .clause-body p:last-child { margin-bottom: 0; }
+  .clause-body ul { margin: 0 0 12px; padding-left: 20px; max-width: 60ch; }
+  .clause-body li { margin-bottom: 6px; }
+  .clause-body li:last-child { margin-bottom: 0; }
+  .clause-body em.term { font-style: normal; font-weight: 600; color: var(--accent-ink); }
+  footer.doc-foot {
+    margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line);
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .org-name { font-family: "Source Serif 4", serif; font-weight: 700; font-size: 16px; color: var(--ink); }
+  .contact { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; color: var(--tag); }
+  .contact a { color: inherit; }
+  @media (max-width: 480px) {
+    section.clause { grid-template-columns: 1fr; gap: 6px; }
+    .clause-num { padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="doc-head">
+    <span class="eyebrow">Extensor e-SUS PEC · Módulo Saúde da Mulher</span>
+    <h1>Política de Privacidade</h1>
+    <p class="subtitle">Como a extensão trata dados durante o uso do PEC e-SUS APS na Atenção Primária à Saúde.</p>
+    <div class="meta-row">
+      <span>Mantida por <b>Andrade Gestão em Saúde (AGS)</b></span>
+      <span>Atualizada em <b>setembro de 2026</b></span>
+      <span>Base legal <b>LGPD · Lei nº 13.709/2018</b></span>
+    </div>
+  </header>
+
+  <div class="callout">
+    <span class="mark">§</span>
+    <p>Em resumo: a extensão opera <strong>100% no navegador</strong>. Nenhum dado de paciente — nome, CPF, CNS, histórico clínico — sai da memória local para servidores da AGS ou de terceiros.</p>
+  </div>
+
+  <section class="clause">
+    <span class="clause-num">01</span>
+    <div class="clause-body">
+      <h2>Arquitetura client-side e não coleta de dados pessoais</h2>
+      <p>O Extensor e-SUS PEC (Módulo Saúde da Mulher) foi projetado sob o princípio de <em class="term">zero coleta de dados clínicos e pessoais</em>.</p>
+      <ul>
+        <li>Todo o processamento de informações do cidadão — nome, CPF, CNS, histórico clínico, requisições de exames e registros de faltas — ocorre exclusivamente de forma local, na memória RAM do navegador em que a extensão está instalada.</li>
+        <li>Nenhum dado pessoal ou de saúde dos pacientes atendidos na Atenção Primária é enviado, armazenado, vendido ou compartilhado com servidores da AGS ou de terceiros.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">02</span>
+    <div class="clause-body">
+      <h2>Telemetria técnica e suporte institucional</h2>
+      <p>Para fins de validação de compatibilidade, controle de versão e suporte técnico, a extensão pode comunicar à infraestrutura da AGS estritamente informações institucionais e operacionais não sensíveis, tais como:</p>
+      <ul>
+        <li>Identificação da Unidade Básica de Saúde (CNES), Município e Estado (UF);</li>
+        <li>Versão instalada da extensão e do navegador;</li>
+        <li>Logs resumidos de erros técnicos em caso de falhas de execução.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">03</span>
+    <div class="clause-body">
+      <h2>Ausência de gravação automática</h2>
+      <p>A extensão atua exclusivamente na camada de interface do usuário (data entry) para otimizar o preenchimento de requisições e a visualização de alertas.</p>
+      <p>A ferramenta <em class="term">não realiza gravações clínicas automáticas</em> no banco de dados do e-SUS PEC. A validação final e a responsabilidade assistencial permanecem integralmente sob o controle do profissional de saúde.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">04</span>
+    <div class="clause-body">
+      <h2>Alterações nesta política</h2>
+      <p>Esta política de privacidade poderá ser atualizada para refletir melhorias no produto ou adequações regulatórias. Recomendamos a consulta periódica a este documento.</p>
+    </div>
+  </section>
+
+  <footer class="doc-foot">
+    <span class="org-name">Andrade Gestão em Saúde · AGS</span>
+    <span class="contact">Suporte: <a href="mailto:agsap@agsap.com.br">agsap@agsap.com.br</a></span>
+  </footer>
+</div>
+</body>
+</html>
